@@ -22,22 +22,22 @@ class EditPost extends Component {
   render() {
     return (
       <div>
-        <h4>Create Post</h4>
+        <h4>Edit Post</h4>
         <form onSubmit={this.handleEdit}>
           <input
             required
             type="text"
             ref={input => (this.getTitle = input)}
-            placeholder="Enter Post Title"
+            placeholder="Enter New Post Title"
           />
 
           <textarea
             required
             ref={input => (this.getMessage = input)}
-            placeholder="Enter Post"
+            placeholder="Enter New Post"
           />
 
-          <button>Post</button>
+          <button>Create new Post</button>
         </form>
       </div>
     );

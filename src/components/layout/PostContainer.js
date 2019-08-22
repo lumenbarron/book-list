@@ -1,10 +1,7 @@
 import React, {Component} from "react";
-import {Grid, Button} from '@material-ui/core';
-import { styled } from '@material-ui/styles';
+import {Grid} from '@material-ui/core';
 import CreatePost from '../posts/CreatePost';
 import AllPost from '../posts/AllPost';
-import Dashboard from './Dashboard';
-import Navbar from './Navbar';
 import AddPostButton from '../posts/AddPostButton';
 
 const createpost = {
@@ -34,17 +31,16 @@ render () {
     <div>
       {/* {this.state.showCreate && <AddPostButton addPost = {this.changeView} /> }
       {this.state.showList && <AllPost /> } */}
-       <Grid container spacing={3}>
-      <Grid style={createpost} spacing={3} item xs={6} sm={6} md={6}>
-        <AllPost />
+      <Grid container spacing={3}>
+        <Grid style={createpost} spacing={3} item xs={6} sm={6} md={6}>
+          <AllPost />
+        </Grid>
+        <Grid style={allpost} spacing={3} item xs={6} sm={6} md={6}>
+          <CreatePost />
+        </Grid>
+        <AddPostButton />
       </Grid>
-      <Grid style={allpost} spacing={3} item xs={6} sm={6} md={6}>
-        <CreatePost />
-      </Grid>
-      <AddPostButton />
-    </Grid>
     </div>
-
   );
 }
 };

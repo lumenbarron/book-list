@@ -20,7 +20,7 @@ class Post extends Component {
             this.props.dispatch({ type: "delete_post", id: this.props.post.id })
           }
         >
-          Deelete
+          Delete
         </button>
       </div>
     );

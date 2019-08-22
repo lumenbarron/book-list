@@ -17,7 +17,7 @@ const Navbar = () => {
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6" color="inherit">
-            To do List
+            Post Everything!
           </Typography>
         </Toolbar>
       </AppBar>

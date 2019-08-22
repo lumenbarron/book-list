@@ -3,15 +3,6 @@ import {Button, Grid} from '@material-ui/core';
 import PostContainer from './PostContainer'
 import Navbar from './Navbar';
 import AddPostButton from '../posts/AddPostButton';
-// import {Grid, makeStyles} from '@material-ui/core';
-
-// const createpost = {
-//   border: '1px solid pink',
-// };
-
-// const allpost = {
-//   border: '1px solid blue',
-// };
 
 class Dashboard extends Component {
     constructor () {
@@ -25,7 +16,6 @@ class Dashboard extends Component {
           ...this.state,
           showPost : false,
           showCont : true
-            // showPost : !this.state.showPost
         })
       }
       render () {
