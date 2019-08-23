@@ -1,21 +1,7 @@
 import  React, { Component } from "react";
 import { connect } from "react-redux";
-import CreatePostButton from './CreatePostButton'
 
 class CreatePost extends Component {
-  // constructor () {
-  //   super()
-  //   this.state = {
-  //     showForm : true,
-  //   }
-  // }
-  // changeView (){
-  //   this.setState({
-  //     ...this.state,
-  //     showForm : false,
-  //     showCreate : true
-  //   })
-  // }
   handleSubmit = e => {
     e.preventDefault();
     const title = this.getTitle.value;

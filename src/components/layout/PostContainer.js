@@ -4,14 +4,6 @@ import CreatePost from '../posts/CreatePost';
 import AllPost from '../posts/AllPost';
 import AddPostButton from '../posts/AddPostButton';
 
-const createpost = {
-  border: '1px solid pink',
-};
-
-const allpost = {
-  border: '1px solid blue',
-};
-
 class PostContainer extends Component {
   constructor () {
     super()
@@ -29,13 +21,11 @@ class PostContainer extends Component {
 render () {
   return (
     <div>
-      {/* {this.state.showCreate && <AddPostButton addPost = {this.changeView} /> }
-      {this.state.showList && <AllPost /> } */}
       <Grid container spacing={3}>
-        <Grid style={createpost} spacing={3} item xs={6} sm={6} md={6}>
+        <Grid  spacing={3} item xs={6} sm={6} md={6}>
           <AllPost />
         </Grid>
-        <Grid style={allpost} spacing={3} item xs={6} sm={6} md={6}>
+        <Grid  spacing={3} item xs={6} sm={6} md={6}>
           <CreatePost />
         </Grid>
         <AddPostButton />

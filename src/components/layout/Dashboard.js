@@ -24,32 +24,6 @@ class Dashboard extends Component {
             <Navbar/>
             {this.state.showPost && <AddPostButton addPost = {this.changeView} />}
             {this.state.showCont && <PostContainer />}
-            {/* <Grid container spacing={3}> */}
-              {/* {this.state.showPost ? (
-                  <h5>Aún no has añadido ningún libro</h5>
-
-              ) : (
-                // <Grid
-                //   style={allpost}
-                //   spacing={3}
-                //   item
-                //   xs={6}
-                //   sm={6}
-                //   md={6}
-                // >
-                  <PostContainer />
-               // </Grid>
-              )} */}
-            {/* </Grid> */}
-            {/* <Button
-                variant="contained"
-                size="large"
-                color="secondary"
-                onClick={() => this.changeView()}
-              >
-                Agrega un libro por leer
-              </Button> */}
-              
           </div>
         );
       }
